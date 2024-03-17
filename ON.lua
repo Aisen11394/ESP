@@ -1,5 +1,5 @@
 local IsDisabled = true
-local IsTeamCheckEnabled = false 
+local IsTeamCheckEnabled = true 
 
 game:GetService('RunService').RenderStepped:Connect(function()
     if IsDisabled then
@@ -17,6 +17,7 @@ game:GetService('RunService').RenderStepped:Connect(function()
                     humanoidRootPart.BrickColor = BrickColor.new("Really blue")
                     humanoidRootPart.Material = Enum.Material.Neon
                     humanoidRootPart.CanCollide = false
+                    humanoidRootPart.AlwaysOnTop = true
                 end
             end
         end
