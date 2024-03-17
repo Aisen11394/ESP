@@ -18,6 +18,7 @@ game:GetService('RunService').RenderStepped:Connect(function()
                     humanoidRootPart.Material = Enum.Material.Neon
                     humanoidRootPart.CanCollide = false
                     humanoidRootPart.AlwaysOnTop = true
+                    humanoidRootPart.ZIndex = 0
                 end
             end
         end
