@@ -1,4 +1,3 @@
-local HeadSize = 20
 local IsDisabled = true
 local IsTeamCheckEnabled = false 
 
@@ -13,7 +12,7 @@ game:GetService('RunService').RenderStepped:Connect(function()
             if player ~= localPlayer and (not IsTeamCheckEnabled or player.Team ~= localPlayerTeam) then
                 local humanoidRootPart = player.Character and player.Character:FindFirstChild("HumanoidRootPart")
                 if humanoidRootPart then
-                    humanoidRootPart.Size = Vector3.new(HeadSize, HeadSize, HeadSize)
+                    humanoidRootPart.Size = Vector3.new(6, 5, 3)
                     humanoidRootPart.Transparency = 0.45
                     humanoidRootPart.BrickColor = BrickColor.new("Really blue")
                     humanoidRootPart.Material = Enum.Material.Neon
